@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_view_bg"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="输入片名/人名的首字母或全拼"
+            android:lines="1"
+            android:padding="10dp"
+            android:textColor="@color/search_color"
+            android:textColorHint="#bdbdbd"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.psqiu.keyboard.KeyBordView
+            android:id="@+id/keyBordView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
